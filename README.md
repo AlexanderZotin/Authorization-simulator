@@ -5,5 +5,5 @@
 записываются в файл <kbd>Authorization simulator data.ser</kbd>.
 
 ### Как запустить?
-Нужно скачать и открыть файл Authorization-Simulator-1.1.jar
+Нужно скачать и открыть файл <kbd>Authorization-Simulator-1.1.jar</kbd>
 Для запуска требуется Java 22+.
