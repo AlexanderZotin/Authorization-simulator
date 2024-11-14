@@ -4,15 +4,15 @@ import simulator.model.Serializer;
 import simulator.model.User;
 import simulator.model.UserRepository;
 import simulator.view.MainView;
+import lombok.Getter;
+import lombok.NonNull;
 
-import java.util.Objects;
+public class ControllerImplementation implements AuthorizationController {
+    private final @Getter MainView view;
+    private UserRepository userRepository;
 
-public class Controller implements AuthorizationController {
-    private final MainView view;
-    private final UserRepository userRepository;
-
-    public Controller(MainView view) {
-        this.view = Objects.requireNonNull(view);
+    public ControllerImplementation(@NonNull MainView view) {
+        this.view = view;
         userRepository = new Serializer().deserialize().orElseGet(UserRepository::new);
     }
 

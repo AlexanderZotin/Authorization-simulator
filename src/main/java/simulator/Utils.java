@@ -6,7 +6,7 @@ import java.util.function.Supplier;
 
 public final class Utils {
     private Utils() {
-        throw new AssertionError("Не должно быть экземпляра класса Utils!");
+        throw new AssertionError("No instances of class Utils for you!");
     }
 
     public static void whileSuccessfulOrCancel(Supplier<Optional<?>> getting, Runnable action) {

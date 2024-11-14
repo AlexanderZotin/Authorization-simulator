@@ -1,8 +1,10 @@
 package simulator.exceptions;
 
+import lombok.NonNull;
+
 public class UserAllredyExistsException extends RuntimeException {
 
-    public UserAllredyExistsException(String message) {
+    public UserAllredyExistsException(@NonNull String message) {
         super(message);
     }
 }
